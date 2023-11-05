@@ -1,17 +1,16 @@
-import React from "react";
-
+import HeaderH3 from "./HeaderH3";
+import HeaderParrafo from "./HeaderParrafo";
 import "./headerCss.css";
 
 export default function Header() {
+  const p1 =
+      "Self-motivated developer, who is willing to learn and create outstanding UI applications.",
+    p2 =
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi, illum voluptas exercitationem quisquam, doloremque dolor quia";
+
   return (
     <header className="header">
-      <section className="header__section1">
-        {/* <img
-          className=" header__section1--img"
-          src="images/fotoPerfil.jpeg"
-          alt=""
-        />  */}
-      </section>
+      <section className="header__section1"></section>
 
       <section className="header__section2">
         <div className="header__section2--div1 headerDiv1">
@@ -23,26 +22,15 @@ export default function Header() {
           </div>
 
           <div className="headerDiv1__div2">
-            <h3 className="texto1">
-              <i className="fa-solid fa-envelope"></i> ejemplo@mail.com
-            </h3>
-            <h3 className="texto1">
-              <i className="fa-solid fa-phone"></i> +54 9 11-1234-5678
-            </h3>
+            <HeaderH3 name="fa-solid fa-envelope" content="ejemplo@mail.com" />
+            <HeaderH3 name="fa-solid fa-phone" content="+54 9 11-1234-5678" />
           </div>
         </div>
 
         <div className="header__section2--div2 headerDiv2">
-          <p className="headerDiv2__p1 texto1">
-            Self-motivated developer, who is willing to learn and create
-            outstanding UI applications.
-          </p>
-
-          <p className="headerDiv2__p2 texto1">
-            <br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            quasi, illum voluptas exercitationem quisquam, doloremque dolor quia
-          </p>
+          <HeaderParrafo name="headerDiv2__p1" content={p1} />
+          <br />
+          <HeaderParrafo name="headerDiv2__p2" content={p2} />
         </div>
       </section>
     </header>

@@ -1,4 +1,3 @@
-//import React from 'react'
 import "./progresoCss.css";
 
 const Progreso = ({ titulo, valor }) => {

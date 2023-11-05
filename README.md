@@ -1,8 +1,27 @@
-# React + Vite
+# Javier-Espindola-entrega03
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+- **_Consigna_**: Rearmar el proyecto utilizando React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **_Modalidad de Entrega_**
+  Para la entrega se deberá crear una tag del repositorio de GitHub con la siguiente estructura nombre-apellido-entrega03.
+  En Classroom se adjuntará el link de la tag y el link al sitio web creado con GitHub Pages.
+
+- **_Puntos a Evaluar_** :
+  <br> En esta primera entrega se evaluará: 1. En esta primera entrega se evaluará: 2. Correcta división de Componentes 3. Correcto uso de Props y State 4. Correcciones de la entrega anterior 5. Correcto uso de GitHub
+- **_Importante_** - Al momento de calificar se tendrá en consideración la entrega de los trabajos propuestos en el Alumni en aquellos casos en que no se llegue con la nota para aprobar. En ningún caso la no entrega de los mismos descontará puntos.
+
+---
+
+- **_Integrador resuelto_**:
+- **_Github Pages_**: https://micolash89.github.io/Javier-Espindola-entrega03/
+
+---
+
+- **_Diseño mobile_**:
+  </br>
+  <img src ="src/images/mobile.PNG">
+- **_Diseño desktop_**:
+  </br>
+  <img src ="images/desktop.PNG">

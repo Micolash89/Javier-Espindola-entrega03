@@ -1,0 +1,23 @@
+.activado {
+  border-color: var(--bg-celeste);
+  background-color: var(--bg-celeste);
+  color: white;
+}
+
+.demo:active {
+  border-color: var(--bg-celeste);
+  background-color: var(--bg-blanco);
+  color: var(--bg-celeste) !important;
+}
+
+.section6Div1__div3--button:hover {
+  color: var(--bg-blanco);
+}
+
+.code:hover {
+  color: var(--bg-celeste);
+}
+
+.code:active {
+  color: var(--bg-blanco);
+}

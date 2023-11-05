@@ -1,4 +1,4 @@
-import React from "react";
+import CardA from "./CardA";
 
 const DesktopCard = ({
   element: { img, hashTag, title, paragraph, demo, code },
@@ -14,22 +14,8 @@ const DesktopCard = ({
       </div>
       <p className="section3Div__p texto1">{paragraph}</p>
       <div className="section3Div__div3">
-        <a
-          target="_blank"
-          href={`${demo}`}
-          className="section3Div__div3--button section3Button1 texto1"
-          rel="noreferrer"
-        >
-          Demo
-        </a>
-        <a
-          target="_blank"
-          href={`${code}`}
-          className="section3Div__div3--button section3Button2 texto1"
-          rel="noreferrer"
-        >
-          Code
-        </a>
+        <CardA link={demo} name="demo activado section3Div" content="Demo" />
+        <CardA link={code} name="code section3Div" content="Code" />
       </div>
     </>
   );

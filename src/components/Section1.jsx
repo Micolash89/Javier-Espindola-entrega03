@@ -1,4 +1,3 @@
-import React from "react";
 import "./section1Css.css";
 import Progreso from "./Progreso";
 

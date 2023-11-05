@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./mainCss.css";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
@@ -7,12 +6,11 @@ import Section4 from "./Section4";
 import Section5 from "./Section5";
 import Section6 from "./Section6";
 import { END_POINTS } from "./EndPoints.Constantes";
+import { useState } from "react";
 
 const Main = ({ posActual, setTam, setPosActual }) => {
   const [btn, setBtn] = useState(END_POINTS.RESPONSIVE());
 
-  //OTRO PARA CAMBIAR DE COLOR
-  //console.log(btn);
   return (
     <>
       <main className="main">

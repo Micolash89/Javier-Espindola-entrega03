@@ -3,13 +3,13 @@
 */
 :root {
   /*Declarar variables*/
-  /* --txt-blanco: #FFFFFF;
-    --txt-negro: #000000; */
   --bg-beige: #f3ebeb;
   --bg-celeste: #2f80ed;
   --bg-grisClaro: #c4c4c4;
   --bg-grisMedio: #828282;
   --bg-grisOscuro: #4f4f4f;
+  --bg-blanco: rgb(255, 255, 255);
+  --bg-negro: rgb(0, 0, 0);
 
   --bd-radius1: 12px;
   --bd-pag: 4px;

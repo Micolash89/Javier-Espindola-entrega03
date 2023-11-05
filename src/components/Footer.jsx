@@ -1,7 +1,7 @@
-import React from "react";
 import BotonPaginado from "./BotonPaginado";
 import "./footerCss.css";
 import { useEffect, useState } from "react";
+
 const Footer = ({ posActual, setPosActual, tam }) => {
   const [botones, setBotones] = useState([]);
 

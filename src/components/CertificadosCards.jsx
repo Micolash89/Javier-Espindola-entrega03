@@ -1,4 +1,5 @@
-import React from "react";
+import CardA from "./CardA";
+import "./certificadosCardsCss.css";
 
 const CertificadosCards = ({
   element: { img, hashTag, title, paragraph, demo, code },
@@ -15,22 +16,8 @@ const CertificadosCards = ({
         </div>
         <p className="section6Div1__p texto1">{paragraph}</p>
         <div className="section6Div1__div3">
-          <a
-            target="_blank"
-            href={`${demo}`}
-            className="section6Div1__div3--button texto1"
-            rel="noreferrer"
-          >
-            Demo
-          </a>
-          <a
-            target="_blank"
-            href={`${code}`}
-            className="section6Div1__div3--button texto1"
-            rel="noreferrer"
-          >
-            Code
-          </a>
+          <CardA link={demo} name="demo activado section6Div1" content="Demo" />
+          <CardA link={code} name="code section6Div1" content="Code" />
         </div>
       </div>
     </>
