@@ -1,0 +1,13 @@
+
+
+
+
+.body {
+  display: flex;
+  /*poner todo en forma de columnas*/
+  flex-direction: column;
+  padding: 16px;
+  gap: 24px;
+  background-color: var(--bg-beige);
+  /* width: 100vw; */
+}

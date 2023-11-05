@@ -1,0 +1,22 @@
+.contenedorRange {
+  display: flex;
+  align-items: center !important;
+  justify-items: center !important;
+}
+
+.contenedorRange__progress {
+  margin: auto 0;
+  /* height: 30%; */
+  width: 100%;
+  border: none;
+  /* background: var(--bg-grisClaro); */
+}
+
+.contenedorRange__progress::-webkit-progress-value {
+  background: var(--bg-celeste);
+}
+
+/* Estilo para el fondo (40% en gris) */
+.contenedorRange__progress::-webkit-progress-bar {
+  background: var(--bg-grisClaro);
+}

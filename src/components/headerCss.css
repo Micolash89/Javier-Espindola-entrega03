@@ -1,0 +1,101 @@
+@import url(variables.css);
+/* @import url(estilosGenericos.css); */
+/* @import url(estilosDesktop.css); */
+
+.header {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: var(--bd-radius1);
+  background-color: white;
+}
+
+.header__section1 {
+  background-image: url("../images/fotoPerfil.jpeg");
+  width: 340px;
+  height: 340px;
+  background-position: center -40px;
+  border-radius: var(--bd-radius1);
+  align-self: center;
+  background-repeat: no-repeat;
+}
+
+.header__section1--img {
+  border-radius: var(--bd-radius1);
+}
+
+.header__section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.headerDiv1__div1--span {
+  color: var(--bg-grisMedio);
+}
+
+.header__section2--div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.headerDiv1__div1,
+.headerDiv1__div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerDiv2__p2 {
+  display: none;
+}
+
+.headerDiv2__p1,
+.headerDiv2__p2 {
+  color: var(--bg-grisMedio);
+}
+
+@media (max-width: 404px) {
+  .header__section1 {
+    width: 100%;
+    background-position: center -40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__section1 {
+    width: 570px;
+    height: 350px;
+    max-width: 357px;
+  }
+
+  .header {
+    flex-direction: row;
+    padding: 32px;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .header__section2 {
+    align-items: center;
+    margin-right: 250px;
+    gap: 60px;
+  }
+
+  .header__section2--div1 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .headerDiv2__p2 {
+    display: flex;
+  }
+
+  .headerDiv1__div1,
+  .headerDiv1__div2 {
+    gap: 0;
+  }
+}

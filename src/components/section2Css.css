@@ -1,0 +1,137 @@
+.header__section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main__section2 {
+  background-color: white;
+  border-radius: var(--bd-radius1);
+}
+
+.main__section2--div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.section2Div {
+  color: var(--bg-grisOscuro);
+}
+
+.section2DivDiv1__h3,
+.section2DivDiv2__h3,
+.section2DivDiv3__h3 {
+  color: black;
+}
+
+.section2DivDiv1__div1,
+.section2DivDiv2__div1,
+.section2DivDiv3__div1 {
+  padding: 0 20px;
+  border: 1px solid var(--bg-grisClaro);
+  border-radius: var(--bd-radius1);
+}
+
+.section2DivDiv1__span,
+.section2DivDiv2__span,
+.section2DivDiv3__span {
+  color: var(--bg-grisMedio);
+}
+
+.section2DivDiv1,
+.section2DivDiv2,
+.section2DivDiv3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section2Div__div {
+  align-self: center;
+}
+
+.section2DivDiv1__div,
+.section2DivDiv2__div,
+.section2DivDiv3__div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section2DivDiv2,
+.section2DivDiv3 {
+  display: none;
+}
+
+.main__section2 {
+  order: 5;
+}
+
+.section2DivDiv1__div1--img,
+.section2DivDiv2__div1--img,
+.section2DivDiv3__div1--img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section2DivDiv1__div1--img,
+.section2DivDiv2__div1--img,
+.section2DivDiv3__div1--img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.section2DivDiv1:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .main__section2 {
+    order: 3;
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .section2Div__div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 100px;
+    /* flex-grow: 1; */
+    /* margin: 0 25%; */
+  }
+
+  .section2DivDiv1:not(:first-child) {
+    display: flex;
+  }
+
+  .section2DivDiv1__div1--img,
+  .section2DivDiv2__div1--img,
+  .section2DivDiv3__div1--img {
+    /* object-fit: cover; */
+    /* margin: 0 50px; */
+    padding: 0 50px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .section2DivDiv1__div1,
+  .section2DivDiv2__div1,
+  .section2DivDiv3__div1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section2Div__div--div {
+    border: 1px solid var(--bg-grisClaro);
+    border-radius: var(--bd-radius1);
+    padding: 8px;
+  }
+}

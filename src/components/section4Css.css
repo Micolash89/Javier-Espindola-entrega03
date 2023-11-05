@@ -1,0 +1,141 @@
+.main__section4 {
+  background-color: white;
+  border-radius: var(--bd-radius1);
+}
+
+.main__section4 {
+  order: 4;
+}
+
+.main__section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.main__section4--div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  gap: 16px;
+}
+
+.main__section4--h3 {
+  color: var(--bg-grisOscuro);
+}
+
+.section4__div1,
+.section4__div2 {
+  display: flex;
+  padding: 8px;
+  border: 1px solid var(--bg-grisMedio);
+  border-radius: var(--bd-radius1);
+}
+
+.section4__div1--div,
+.section4__div1--p,
+.section4__div2--div,
+.section4__div2--p {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 50%;
+  margin: 15% 0;
+  justify-content: center;
+}
+
+/*adidas*/
+.section4Div2__div1,
+.section4Div1__div1 {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section4Div1__div2,
+.section4Div2__div2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.section4__div2--p,
+.section4Div2__div2--span,
+.section4__div1--p,
+.section4Div1__div2--span {
+  color: var(--bg-grisMedio);
+}
+
+.section4__div1:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .main__section4 {
+    height: 100%;
+    width: 100%;
+    order: 4;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .section4__div1:not(:first-child) {
+    display: flex;
+  }
+
+  .main__section4--div {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10%;
+  }
+
+  .section4__div1,
+  .section4__div2 {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section4__div1--div,
+  .section4__div2--div {
+    justify-content: start;
+  }
+
+  .section4__div1--div,
+  .section4__div2--div {
+    flex-direction: row;
+  }
+
+  .section4Div1__div2,
+  .section4Div2__div2 {
+    gap: 5px;
+  }
+
+  .section4__div1--div,
+  .section4__div1--p,
+  .section4__div2--div,
+  .section4__div2--p {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* h4 , span e img*/
+  .section4Div1__div1,
+  .section4Div1__div2,
+  .section4Div2__div1,
+  .section4Div2__div2 {
+    margin: 0;
+  }
+
+  .section4__div1--p,
+  .section4__div2--p {
+    margin-left: 55px;
+    width: 65%;
+  }
+
+  .section4__div2--p,
+  .section4__div2--p .section4__div1--p,
+  .section4__div2--p {
+    padding-bottom: 4%;
+  }
+}
