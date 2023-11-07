@@ -1,5 +1,5 @@
 import BotonPaginado from "./BotonPaginado";
-import "./footerCss.css";
+import "./css/footerCss.css";
 import { useEffect, useState } from "react";
 
 const Footer = ({ posActual, setPosActual, tam }) => {
@@ -26,23 +26,23 @@ const Footer = ({ posActual, setPosActual, tam }) => {
     <footer className="footer">
       {/* <!-- botones --> */}
       <section className="footer__section" id="footer_section">
-        {
+        {tam != 0 && (
           <BotonPaginado
             posActual={posActual}
             setPosActual={setPosActual}
             i="<"
             tam={tam}
           />
-        }
+        )}
         {botones}
-        {
+        {tam != 0 && (
           <BotonPaginado
             posActual={posActual}
             setPosActual={setPosActual}
             i=">"
             tam={tam}
           />
-        }
+        )}
       </section>
     </footer>
   );

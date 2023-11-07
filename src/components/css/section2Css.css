@@ -5,7 +5,7 @@
 }
 
 .main__section2 {
-  background-color: white;
+  background-color: var(--bg-blanco);
   border-radius: var(--bd-radius1);
 }
 
@@ -23,7 +23,7 @@
 .section2DivDiv1__h3,
 .section2DivDiv2__h3,
 .section2DivDiv3__h3 {
-  color: black;
+  color: var(--bg-negro);
 }
 
 .section2DivDiv1__div1,

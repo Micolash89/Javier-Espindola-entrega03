@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import "./botonPaginadoCss.css";
+import "./css/botonPaginadoCss.css";
 
 const BotonPaginado = ({ posActual, setPosActual, i, tam }) => {
   function handlePos() {

@@ -1,4 +1,4 @@
-import "./progresoCss.css";
+import "./css/progresoCss.css";
 
 const Progreso = ({ titulo, valor }) => {
   return (

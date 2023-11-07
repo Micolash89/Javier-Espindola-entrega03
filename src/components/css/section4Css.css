@@ -1,5 +1,5 @@
 .main__section4 {
-  background-color: white;
+  background-color: var(--bg-blanco);
   border-radius: var(--bd-radius1);
 }
 

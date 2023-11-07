@@ -8,11 +8,11 @@
   flex-direction: column;
   gap: 24px;
   border-radius: var(--bd-radius1);
-  background-color: white;
+  background-color: var(--bg-blanco);
 }
 
 .header__section1 {
-  background-image: url("../images/fotoPerfil.jpeg");
+  background-image: url("../../images/fotoPerfil.jpeg");
   width: 340px;
   height: 340px;
   background-position: center -40px;

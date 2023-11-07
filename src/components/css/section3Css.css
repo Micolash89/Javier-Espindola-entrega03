@@ -1,12 +1,12 @@
 .main__section3 {
-  background-color: white;
+  background-color: var(--bg-blanco);
   border-radius: var(--bd-radius1);
 }
 
 .section3Div__div3--button {
   font-family: "Montserrat", sans-serif;
   color: var(--bg-grisOscuro);
-  background-color: white;
+  background-color: var(--bg-blanco);
   padding: 16px;
   border-radius: var(--bd-radius1);
   cursor: pointer;
@@ -28,7 +28,7 @@
 .activado:hover {
   border-color: var(--bg-celeste);
   background-color: var(--bg-celeste);
-  color: white;
+  color: var(--bg-blanco);
 }
 
 .main__section3 {
@@ -43,7 +43,7 @@
 }
 
 .main__section3--div {
-  background-color: white;
+  background-color: var(--bg-blanco);
   padding: 16px;
   border-radius: var(--bd-radius1);
   display: flex;

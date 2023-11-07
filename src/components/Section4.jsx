@@ -1,10 +1,14 @@
-import "./section4Css.css";
+import "./css/section4Css.css";
 import { useEffect, useState } from "react";
 import Experiencia from "./Experiencia";
 import { END_POINTS } from "./EndPoints.Constantes";
+import Loader from "./Loader";
+import Error from "./Error";
 
 const Section4 = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch(END_POINTS.EXPERIENCE())
@@ -16,7 +20,13 @@ const Section4 = () => {
       .then((data) => {
         setData(data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        setError(true);
+        console.log(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -25,6 +35,8 @@ const Section4 = () => {
         <h3 className="main__section4--h3 titulo1">Experiencia</h3>
 
         <div className="main__section4--div section4" id="experiencia">
+          {loading && <Loader />}
+          {error && <Error />}
           {data.map((element, i) => (
             <Experiencia key={i} element={element} />
           ))}

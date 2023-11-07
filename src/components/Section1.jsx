@@ -1,4 +1,4 @@
-import "./section1Css.css";
+import "./css/section1Css.css";
 import Progreso from "./Progreso";
 
 const Section1 = () => {

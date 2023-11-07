@@ -1,67 +1,11 @@
-/*SPINNER*/
-
-.footer__section--button:active {
-  border-color: var(--bg-celeste);
-  color: var(--bg-celeste);
-}
-
-.footer__section--button:active {
-  border-color: var(--bg-celeste);
-  background-color: var(--bg-celeste);
-  color: white;
-}
-
-.footer__section--button {
-  font-family: "Montserrat", sans-serif;
-  color: var(--bg-grisOscuro);
-  background-color: white;
-  padding: 16px;
-  border-radius: var(--bd-radius1);
-  cursor: pointer;
-  border: 2px solid var(--bg-grisOscuro);
-  text-decoration: none;
-}
-
-/*FOOTER*/
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
-.footer__section--button {
-  padding: 12px;
-  /* margin: 0 2px; */
-  /* gap: 10px; */
-  border-radius: var(--bd-pag);
-}
-
-.section4__div2 {
-  display: none;
-}
-
-.footer {
-  display: none;
-}
-
-.main__section3 {
-  display: none;
-}
-
-.next {
-  margin-left: 4px;
-}
-
-@media (min-width: 1440px) {
-  .footer {
-    display: flex;
-  }
-}
-
 .lds-roller {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
+  scale: 1.4;
+  align-self: center;
+  justify-self: center;
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;

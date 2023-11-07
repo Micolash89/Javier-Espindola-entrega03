@@ -1,5 +1,5 @@
 .activado {
   border-color: var(--bg-celeste);
   background-color: var(--bg-celeste);
-  color: white;
+  color: var(--bg-blanco);
 }

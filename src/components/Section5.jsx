@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import "./section5Css.css";
+import "./css/section5Css.css";
 import Section5Botones from "./Section5Botones";
 import { END_POINTS } from "./EndPoints.Constantes";
 // <!-- btonsetBtoon cambiar nombre -->

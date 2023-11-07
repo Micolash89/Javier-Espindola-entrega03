@@ -1,5 +1,5 @@
 import CardA from "./CardA";
-import "./certificadosCardsCss.css";
+import "./css/certificadosCardsCss.css";
 
 const CertificadosCards = ({
   element: { img, hashTag, title, paragraph, demo, code },

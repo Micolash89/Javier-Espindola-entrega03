@@ -1,6 +1,6 @@
 import HeaderH3 from "./HeaderH3";
 import HeaderParrafo from "./HeaderParrafo";
-import "./headerCss.css";
+import "./css/headerCss.css";
 
 export default function Header() {
   const p1 =

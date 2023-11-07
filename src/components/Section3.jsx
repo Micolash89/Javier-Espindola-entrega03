@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-import "./section3Css.css";
+import "./css/section3Css.css";
 import DesktopCard from "./DesktopCard";
+import Loader from "./Loader";
+import Error from "./Error";
 
 const Section3 = ({ ruta }) => {
   const [data, setData] = useState([false]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch(ruta)
       .then((response) => {
         if (!response.ok) throw "Hubo un error";
@@ -16,17 +21,21 @@ const Section3 = ({ ruta }) => {
       .then((data) => {
         setData(data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        setError(true);
+        console.log(error);
+      })
+      .finally(() => setLoading(false));
   }, [ruta]);
-
-  //console.log(data[0]);
 
   // vista grande de desktop
   return (
     <>
       <section className="main__section3">
         <div className="main__section3--div section3Div" id="tituloGrande">
-          {data[0] && <DesktopCard element={data[0]} />}
+          {error && <Error />}
+          {loading && <Loader />}
+          {!loading && data[0] && <DesktopCard element={data[0]} />}
         </div>
       </section>
     </>
