@@ -24,4 +24,4 @@
   <img src ="src/images/mobile.PNG">
 - **_Diseño desktop_**:
   </br>
-  <img src ="images/desktop.PNG">
+  <img src ="src/images/desktop.PNG">

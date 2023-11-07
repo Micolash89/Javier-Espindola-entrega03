@@ -1,6 +1,6 @@
 import CardA from "./CardA";
 import "./css/certificadosCardsCss.css";
-
+// lo usa section6
 const CertificadosCards = ({
   element: { img, hashTag, title, paragraph, demo, code },
 }) => {

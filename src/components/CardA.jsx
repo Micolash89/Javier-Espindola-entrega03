@@ -1,3 +1,4 @@
+// lo usa certificadosCards y desktopCard
 const CardA = ({ link, name, content }) => {
   return (
     <>

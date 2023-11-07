@@ -134,4 +134,13 @@
     border-radius: var(--bd-radius1);
     padding: 8px;
   }
+
+  .section2Div {
+    height: 100%;
+    width: 100%;
+  }
+
+  #certificados {
+    flex-grow: 1;
+  }
 }

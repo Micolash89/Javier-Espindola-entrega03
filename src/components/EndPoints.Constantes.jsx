@@ -1,3 +1,4 @@
+// definicion de constantes
 export const END_POINTS = {
   URL: "https://my-json-server.typicode.com/Micolash89/endpoints",
 

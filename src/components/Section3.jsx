@@ -12,6 +12,7 @@ const Section3 = ({ ruta }) => {
 
   useEffect(() => {
     setLoading(true);
+    setError(false);
     fetch(ruta)
       .then((response) => {
         if (!response.ok) throw "Hubo un error";
@@ -35,7 +36,7 @@ const Section3 = ({ ruta }) => {
         <div className="main__section3--div section3Div" id="tituloGrande">
           {error && <Error />}
           {loading && <Loader />}
-          {!loading && data[0] && <DesktopCard element={data[0]} />}
+          {!error && !loading && data[0] && <DesktopCard element={data[0]} />}
         </div>
       </section>
     </>

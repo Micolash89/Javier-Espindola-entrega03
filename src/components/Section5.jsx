@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./css/section5Css.css";
 import Section5Botones from "./Section5Botones";
 import { END_POINTS } from "./EndPoints.Constantes";
-// <!-- btonsetBtoon cambiar nombre -->
+//
 const Section5 = ({ setBtn, btn, setPosActual }) => {
   const [activo, SetActivo] = useState("Responsivo");
 

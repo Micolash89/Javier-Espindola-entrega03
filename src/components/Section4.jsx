@@ -11,6 +11,7 @@ const Section4 = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    setError(false);
     fetch(END_POINTS.EXPERIENCE())
       .then((response) => {
         if (!response.ok) throw "Hubo un error";
@@ -22,6 +23,7 @@ const Section4 = () => {
       })
       .catch((error) => {
         setError(true);
+        setData([]);
         console.log(error);
       })
       .finally(() => {
@@ -37,9 +39,8 @@ const Section4 = () => {
         <div className="main__section4--div section4" id="experiencia">
           {loading && <Loader />}
           {error && <Error />}
-          {data.map((element, i) => (
-            <Experiencia key={i} element={element} />
-          ))}
+          {!error &&
+            data.map((element, i) => <Experiencia key={i} element={element} />)}
         </div>
       </section>
     </>

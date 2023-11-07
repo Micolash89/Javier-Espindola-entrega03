@@ -1,3 +1,4 @@
+// lo usa section4
 const Experiencia = ({ element: { img, title1, title2, paragraph } }) => {
   return (
     <div className="section4__div1">

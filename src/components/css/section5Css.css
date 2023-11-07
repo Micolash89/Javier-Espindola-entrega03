@@ -36,7 +36,7 @@
 
 .mainDiv__div--button:hover {
   border-color: var(--bg-celeste);
-  color: var(--bg-blanco);
+  color: var(--bg-celeste);
 }
 
 .mainDiv__div--button:active {
@@ -48,7 +48,7 @@
 .activado {
   border-color: var(--bg-celeste);
   background-color: var(--bg-celeste);
-  color: var(--bg-blanco);
+  color: var(--bg-blanco) !important;
 }
 
 @media (min-width: 1440px) {

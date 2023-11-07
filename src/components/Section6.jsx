@@ -5,12 +5,11 @@ import Loader from "./Loader";
 import Error from "./Error";
 
 const Section6 = ({ ruta, setTam, posActual }) => {
-  const [data, setData] = useState([]);
-
-  const [inicio, setInicio] = useState(0);
-  const [fin, setFin] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [data, setData] = useState([]); //array de objetos
+  const [inicio, setInicio] = useState(0); //posicion inicial
+  const [fin, setFin] = useState(0); //posicion final
+  const [loading, setLoading] = useState(true); //estado de carga
+  const [error, setError] = useState(false); //estado de error
   useEffect(() => {
     setLoading(true);
     setError(false);
@@ -28,6 +27,7 @@ const Section6 = ({ ruta, setTam, posActual }) => {
       })
       .catch((error) => {
         setError(true);
+        setData([]);
         console.log(error);
       })
       .finally(() => setLoading(false));

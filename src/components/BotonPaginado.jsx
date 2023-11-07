@@ -1,5 +1,5 @@
 import "./css/botonPaginadoCss.css";
-
+// lo usa Footer
 const BotonPaginado = ({ posActual, setPosActual, i, tam }) => {
   function handlePos() {
     switch (i) {

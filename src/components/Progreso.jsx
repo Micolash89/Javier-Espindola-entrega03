@@ -1,5 +1,5 @@
 import "./css/progresoCss.css";
-
+// lo usa section 1
 const Progreso = ({ titulo, valor }) => {
   return (
     <>

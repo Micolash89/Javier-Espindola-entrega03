@@ -1,3 +1,4 @@
+// lo usa section2
 const Certificados = ({ element: { img, title1, title2 } }) => {
   return (
     <div className="section2Div__div--div section2DivDiv1">

@@ -13,6 +13,7 @@ const Section2 = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    setError(false);
     fetch(END_POINTS.CERTIFICATES())
       .then((response) => {
         if (!response.ok) throw "Hubo un error";
@@ -36,9 +37,10 @@ const Section2 = () => {
         <div className="section2Div__div" id="certificados">
           {error && <Error />}
           {loading && <Loader />}
-          {data.map((element, i) => (
-            <Certificados key={i} element={element} />
-          ))}
+          {!error &&
+            data.map((element, i) => (
+              <Certificados key={i} element={element} />
+            ))}
         </div>
       </div>
     </section>

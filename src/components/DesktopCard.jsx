@@ -1,5 +1,5 @@
 import CardA from "./CardA";
-
+// lo usa section 3
 const DesktopCard = ({
   element: { img, hashTag, title, paragraph, demo, code },
 }) => {
