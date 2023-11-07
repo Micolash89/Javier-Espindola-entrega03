@@ -23,7 +23,6 @@ const Section4 = () => {
       })
       .catch((error) => {
         setError(true);
-        setData([]);
         console.log(error);
       })
       .finally(() => {
