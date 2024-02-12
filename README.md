@@ -9,7 +9,12 @@
   En Classroom se adjuntará el link de la tag y el link al sitio web creado con GitHub Pages.
 
 - **_Puntos a Evaluar_** :
-  <br> En esta primera entrega se evaluará: 1. En esta primera entrega se evaluará: 2. Correcta división de Componentes 3. Correcto uso de Props y State 4. Correcciones de la entrega anterior 5. Correcto uso de GitHub
+  <br> En esta primera entrega se evaluará:
+  1. Correcta división de Componentes
+  2. Correcto uso de Props y State
+  3. Correcciones de la entrega anterior
+  4. Correcto uso de GitHub
+    
 - **_Importante_** - Al momento de calificar se tendrá en consideración la entrega de los trabajos propuestos en el Alumni en aquellos casos en que no se llegue con la nota para aprobar. En ningún caso la no entrega de los mismos descontará puntos.
 
 ---
